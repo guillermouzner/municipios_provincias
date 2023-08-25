@@ -85,7 +85,7 @@ data = {
     },
     "San Luis": {
         "Municipios": [
-            "San Luis"
+            "San Luis",
             "Zanjitas",
             "Beazley",
             "Balde",
@@ -292,7 +292,7 @@ data = {
             "San Carlos de Bariloche",
             "Cipolletti",
             "Ing. Jacobacci",
-            "El Bolson"
+            "El Bolson",
             "Guardia Mitre",
             "Gral. Roca",
             "Luis Beltran",
@@ -416,7 +416,7 @@ data = {
     "Córdoba": {
         "Municipios": [
             "Cordoba",
-            "Villa Gral Belgrano"
+            "Villa Gral Belgrano",
             "Ballesteros",
             "Río Bamba",
             "Río Ceballos",
@@ -1218,7 +1218,7 @@ data = {
     },
     "Formosa": {
         "Municipios": [
-            "Formosa",            
+            "Formosa",
             "Fortín Lugones",
             "Villa Dos Trece",
             "San Hilario",
@@ -1325,7 +1325,7 @@ data = {
     },
     "Ciudad Autónoma de Buenos Aires": {
         "Municipios": [
-            "CABA"
+            "CABA",
             "Retiro",
             "San Nicolás",
             "Puerto Madero",
