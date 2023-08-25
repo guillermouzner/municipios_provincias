@@ -807,7 +807,7 @@ data = {
     "Santa Fe": {
         "Municipios": [
             "Santa Fe",
-            "Rosario"
+            "Rosario",
             "Pavón",
             "Huanqueros",
             "Arroyo Ceibal",
