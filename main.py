@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 data = {
     "Misiones": {
         "Municipios": [
+            "Posadas",
             "Apóstoles",
             "Tres Capones",
             "Mártires",
@@ -19,7 +20,6 @@ data = {
             "Santa Ana",
             "Corpus",
             "Gobernador Roca",
-            "Posadas",
             "Panambí",
             "Hipólito Irigoyen",
             "Profundidad",
@@ -85,6 +85,7 @@ data = {
     },
     "San Luis": {
         "Municipios": [
+            "San Luis"
             "Zanjitas",
             "Beazley",
             "Balde",
@@ -107,7 +108,6 @@ data = {
             "Quines",
             "Las Vertientes",
             "Paso Grande",
-            "San Luis",
             "El Trapiche",
             "Navia",
             "Desaguadero",
@@ -157,6 +157,7 @@ data = {
     },
     "San Juan": {
         "Municipios": [
+            "San Juan",
             "Iglesia",
             "Valle Fértil",
             "Ullum",
@@ -171,7 +172,6 @@ data = {
             "Jáchal",
             "Calingasta",
             "25 de Mayo",
-            "San Juan",
             "9 de Julio",
             "San Martín",
             "Angaco",
@@ -181,6 +181,7 @@ data = {
     },
     "Entre Ríos": {
         "Municipios": [
+            "Paraná",
             "Aldea Brasilera",
             "Aldea María Luisa",
             "Aldea San Antonio",
@@ -227,7 +228,6 @@ data = {
             "María Grande",
             "Nogoyá",
             "Oro Verde",
-            "Paraná",
             "Piedras Blancas",
             "Primero de Mayo",
             "Pronunciamiento",
@@ -269,9 +269,9 @@ data = {
     },
     "Santa Cruz": {
         "Municipios": [
+            "Calafate",
             "Caleta Olivia",
             "Comandante Luis Piedrabuena",
-            "El Calafate",
             "El Chaltén",
             "Gobernador Gregores",
             "Las Heras",
@@ -289,10 +289,10 @@ data = {
     },
     "Río Negro": {
         "Municipios": [
+            "San Carlos de Bariloche",
             "Cipolletti",
             "Ing. Jacobacci",
-            "El Bolson",
-            "San Carlos de Bariloche",
+            "El Bolson"
             "Guardia Mitre",
             "Gral. Roca",
             "Luis Beltran",
@@ -364,12 +364,12 @@ data = {
     },
     "Chubut": {
         "Municipios": [
+            "Rawson",
             "Buen Pasto",
             "Carrenleufú",
             "El Maitén",
             "Puerto Madryn",
             "Cholila",
-            "Rawson",
             "28 de Julio",
             "Río Pico",
             "Alto Río Senguer",
@@ -415,6 +415,8 @@ data = {
     },
     "Córdoba": {
         "Municipios": [
+            "Cordoba",
+            "Villa Gral Belgrano"
             "Ballesteros",
             "Río Bamba",
             "Río Ceballos",
@@ -520,8 +522,12 @@ data = {
     },
     "Mendoza": {
         "Municipios": [
-            "General Alvear",
+            "Mendoza",
+            "Maipú",
             "San Rafael",
+            "Las Leñas",
+            "Valle de Uco",
+            "General Alvear",
             "Rivadavia",
             "Tupungato",
             "San Carlos",
@@ -531,7 +537,6 @@ data = {
             "Lavalle",
             "Malargüe",
             "Guaymallén",
-            "Maipú",
             "Capital",
             "Godoy Cruz",
             "Junín",
@@ -543,6 +548,7 @@ data = {
     },
     "La Rioja": {
         "Municipios": [
+            "La Rioja",
             "General Ocampo",
             "Chamical",
             "Arauco",
@@ -566,6 +572,7 @@ data = {
     },
     "Catamarca": {
         "Municipios": [
+            "San Fernando del Valle de Catamarca",
             "Belén",
             "Hualfín",
             "Valle Viejo",
@@ -586,7 +593,6 @@ data = {
             "Mutquín",
             "Santa Rosa",
             "Recreo",
-            "San Fernando del Valle de Catamarca",
             "Icaño",
             "Paclín",
             "Tapso",
@@ -607,6 +613,7 @@ data = {
     },
     "La Pampa": {
         "Municipios": [
+            "La Pampa",
             "Pichi Huinca",
             "Quehué",
             "Abramo",
@@ -692,6 +699,7 @@ data = {
     },
     "Santiago del Estero": {
         "Municipios": [
+            "Santiago del Estero",
             "Añatuya",
             "Bandera",
             "Beltrán",
@@ -712,7 +720,6 @@ data = {
             "Pozo Hondo",
             "Quimilí",
             "San Pedro de Guasayán",
-            "Santiago del Estero",
             "Selva",
             "Sumampa",
             "Suncho Corral",
@@ -725,6 +732,9 @@ data = {
     },
     "Corrientes": {
         "Municipios": [
+            "Corrientes",
+            "Goya",
+            "Paso de los Libres",
             "Yataytí Calle",
             "Mercedes",
             "Saladas",
@@ -738,8 +748,6 @@ data = {
             "Tapebicuá",
             "Lavalle",
             "Santa Lucía",
-            "Paso de los Libres",
-            "Goya",
             "Gobernador Martínez",
             "9 de Julio",
             "Felipe Yofré",
@@ -771,7 +779,6 @@ data = {
             "Berón de Astrada",
             "Santa Ana",
             "San Luis del Palmar",
-            "Corrientes",
             "Ramada Paso",
             "San Cosme",
             "Paso de la Patria",
@@ -799,6 +806,8 @@ data = {
     },
     "Santa Fe": {
         "Municipios": [
+            "Santa Fe",
+            "Rosario"
             "Pavón",
             "Huanqueros",
             "Arroyo Ceibal",
@@ -904,6 +913,7 @@ data = {
     },
     "Tucumán": {
         "Municipios": [
+            "San Miguel De Tucuman",
             "Manuel Garcia Fernandez",
             "San Jose de la Cocha",
             "Yanima",
@@ -945,7 +955,6 @@ data = {
             "Graneros",
             "Acheral",
             "Rio Colorado",
-            "San Miguel De Tucuman",
             "Amberes",
             "Santa Cruz y la Tuna",
             "Raco",
@@ -1009,6 +1018,8 @@ data = {
     },
     "Neuquén": {
         "Municipios": [
+            "Neuquén",
+            "Villa la Angostura",
             "Guañacos",
             "Rincón de los Sauces",
             "Octavio Pico",
@@ -1024,7 +1035,6 @@ data = {
             "Aluminé",
             "Villa Traful",
             "Caviahue-Copahue",
-            "Neuquén",
             "Plottier",
             "Centenario",
             "Vista Alegre",
@@ -1065,12 +1075,13 @@ data = {
             "Aguada San Roque",
             "Paso Aguerre",
             "Las Ovejas",
-            "Villa la Angostura"
+            
         ],
         "ISO": "AR-Q"
     },
     "Salta": {
         "Municipios": [
+            "Salta",
             "La Merced",
             "Las Lajitas",
             "Tolar Grande",
@@ -1104,7 +1115,6 @@ data = {
             "General Ballivián",
             "Joaquín V. González",
             "General Pizarro",
-            "Salta",
             "Vaqueros",
             "El Quebrachal",
             "Rosario de Lerma",
@@ -1135,6 +1145,7 @@ data = {
     },
     "Chaco": {
         "Municipios": [
+            "Resistencia",
             "Isla del Cerrito",
             "Chorotis",
             "Santa Sylvina",
@@ -1194,7 +1205,6 @@ data = {
             "Colonias Elisa",
             "Colonias Unidas",
             "General Vedia",
-            "Resistencia",
             "Enrique Urien",
             "Charadai",
             "Margarita Belén",
@@ -1208,6 +1218,7 @@ data = {
     },
     "Formosa": {
         "Municipios": [
+            "Formosa",            
             "Fortín Lugones",
             "Villa Dos Trece",
             "San Hilario",
@@ -1231,7 +1242,6 @@ data = {
             "Pirané",
             "Gran Guardia",
             "Subteniente Perín",
-            "Formosa",
             "El Colorado",
             "Villa Escolar",
             "San Martín Dos",
@@ -1250,6 +1260,8 @@ data = {
     },
     "Jujuy": {
         "Municipios": [
+            "San Salvador de Jujuy",
+            "Tilcara",
             "Yavi",
             "El Cóndor",
             "Cangrejillos",
@@ -1275,7 +1287,6 @@ data = {
             "Libertador General San Martín",
             "Fraile Pintado",
             "Palpalá",
-            "San Salvador de Jujuy",
             "Arrayanal",
             "La Esperanza",
             "El Fuerte",
@@ -1302,7 +1313,6 @@ data = {
             "Hipólito Yrigoyen",
             "Caimancito",
             "Purmamarca",
-            "Tilcara",
             "San Francisco",
             "Tumbaya",
             "Volcán",
@@ -1315,6 +1325,7 @@ data = {
     },
     "Ciudad Autónoma de Buenos Aires": {
         "Municipios": [
+            "CABA"
             "Retiro",
             "San Nicolás",
             "Puerto Madero",
@@ -1368,6 +1379,13 @@ data = {
     },
     "Provincia de Buenos Aires": {
         "Municipios": [
+            "Pilar",
+            "Junín",
+            "San Andrés de Giles",
+            "Mar del Plata",
+            "Saenz Peña",
+            "Mar de las Pampas",
+            "Lobos",
             "Bahía Blanca",
             "General Alvarado",
             "General Pueyrredón",
@@ -1426,9 +1444,7 @@ data = {
             "Esteban Echeverría",
             "Exaltación de la Cruz",
             "San Miguel",
-            "Pilar",
             "Luján",
-            "Junín",
             "Chacabuco",
             "Mercedes",
             "Hurlingham",
@@ -1473,9 +1489,9 @@ data = {
     },
     "Tierra del Fuego": {
         "Municipios": [
+            "Ushuaia",
             "Río Grande",
-            "Tolhuin",
-            "Ushuaia"
+            "Tolhuin"
         ],
         "ISO": "AR-V"
     }
@@ -1500,9 +1516,14 @@ db_params = {
 }
 
 conn = psycopg2.connect(**db_params)
+
+# Filtrar los datos para insertar solo las filas que no existen
+existing_city_names = pd.read_sql("SELECT city_name FROM cities", conn)["city_name"]
+df_to_insert = df[~df["city_name"].isin(existing_city_names)]
+
 engine = create_engine(f'postgresql+psycopg2://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["dbname"]}')
 
-df.to_sql('cities', engine, if_exists='append', index=False)
+df_to_insert.to_sql('cities', engine, if_exists='append', index=False)
 
 conn.close()
 
