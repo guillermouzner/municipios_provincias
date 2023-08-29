@@ -289,7 +289,7 @@ data = {
     },
     "Río Negro": {
         "Municipios": [
-            "San Carlos de Bariloche",
+            "Bariloche",
             "Cipolletti",
             "Ing. Jacobacci",
             "El Bolson",
@@ -1517,14 +1517,27 @@ db_params = {
 
 conn = psycopg2.connect(**db_params)
 
-# Filtrar los datos para insertar solo las filas que no existen
-existing_city_names = pd.read_sql("SELECT city_name FROM cities", conn)["city_name"]
-df_to_insert = df[~df["city_name"].isin(existing_city_names)]
+cur = conn.cursor()
 
-engine = create_engine(f'postgresql+psycopg2://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["dbname"]}')
+existing_city_ids = pd.read_sql("SELECT city_id, state_id FROM cities", conn)
+df_to_insert = df[~df.set_index(['city_id', 'state_id']).index.isin(existing_city_ids.set_index(['city_id', 'state_id']).index)]
 
-df_to_insert.to_sql('cities', engine, if_exists='append', index=False)
+for _, row in df_to_insert.iterrows():
+    cur.execute("INSERT INTO cities (city_id, state_id, city_name) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING",
+                (row["city_id"], row["state_id"], row["city_name"]))
 
+conn.commit()
+cur.close()
 conn.close()
+
+# # Filtrar los datos para insertar solo las filas que no existen
+# existing_city_names = pd.read_sql("SELECT city_name FROM cities", conn)["city_name"]
+# df_to_insert = df[~df["city_name"].isin(existing_city_names)]
+
+# engine = create_engine(f'postgresql+psycopg2://{db_params["user"]}:{db_params["password"]}@{db_params["host"]}:{db_params["port"]}/{db_params["dbname"]}')
+
+# df_to_insert.to_sql('cities', engine, if_exists='append', index=False)
+
+# conn.close()
 
 print("listo :)")
